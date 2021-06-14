@@ -1,0 +1,51 @@
+/* Superior part*/
+
+.top_section {
+  width: 100%;
+  height: 50px;
+}
+
+/* Background image*/
+
+body {
+  background-image: url("/images/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200%;
+}
+div {
+  display: block;
+}
+
+/* Left Container */
+
+.logo {
+  width: 25%;
+  height: auto;
+  margin: 20px 50px;
+}
+
+.timer {
+  background-color: grey;
+  width: 20%;
+  height: 100px;
+  text-align: center;
+  margin: 10px;
+}
+
+.points {
+  background-color: grey;
+  width: 20%;
+  height: 100px;
+  text-align: center;
+  margin: 10px;
+}
+.hero_image img {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  left: 310px;
+  top: 160px;
+}
