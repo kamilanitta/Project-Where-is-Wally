@@ -27,16 +27,16 @@ body {
   width: 100%;
   height: auto;
 }
-
+/* colocar a div do Wally no JS */
 .findWally {
   /* background-color: lime; */
-  border-color: snow;
+  border-color: red;
   border-style: dotted;
-  width: 3%;
+  width: 40px;
   height: 90px;
   position: absolute;
-  right: 420px;
-  bottom: 80px;
+  /* right: 20%;
+  bottom: 25%; */
 }
 .blur {
   background-color: snow;
@@ -54,8 +54,11 @@ body {
   justify-content: center;
 }
 .hero_image {
-  width: 00%;
+  width: 0%;
   height: auto;
+}
+button {
+  border: transparent;
 }
 
 /* Left Container */
@@ -87,7 +90,7 @@ body {
   border-color: #ef2924;
 }
 
-.points {
+.pointsBox {
   background-color: #fff;
   width: 18%;
   height: 100px;
@@ -105,4 +108,5 @@ h1 {
 }
 p {
   font-size: 20pt;
+  margin-top: 5pt;
 }

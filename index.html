@@ -5,20 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Where is Wally?</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="icon" href="/images/wfavicon.ico" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/wfavicon.ico" />
   </head>
 
   <body>
@@ -29,33 +17,48 @@
     <div class="lower_section">
       <div class="left_container">
         <div class="logo_div">
-          <img class="logo" src="/images/whereswally-logo.png" alt="logo" />
+          <img class="logo" src="./images/whereswally-logo.png" alt="logo" />
         </div>
         <div class="timer">
           <h1>Timer</h1>
-          <p class="timer_text">00:00</p>
+          <p>
+            <span id="minDec" class="number">0</span>
+            <span id="minUni" class="number">0</span>
+            <span>:</span>
+            <span id="secDec" class="number">0</span>
+            <span id="secUni" class="number">0</span>
+          </p>
         </div>
-        <div class="points">
+        <div class="pointsBox">
           <h1>Points</h1>
-          <p class="points_text">0 pts</p>
+          <p>
+            <span class="countPoints" class="number">0</span>
+            <span>pts</span>
+          </p>
         </div>
-      </div class="hero_image"></div>
-    </div>
-    
-        <div class="blur">
-          <div id="playBtn">
-          <img src="./images/PlayBtn.svg" alt="Play Button" />
-          <audio src="./sounds/startSound.wav"></audio>
-          
-          
-        </div>  
-
       </div>
-    <div class="findWally">
-        <audio id="start_audio" src="/sounds/found.mp3"></audio>
     </div>
-<audio src="./sounds/bensound-littleidea.mp3" controls autoplay></audio>
-<script src=./js/classes.js></script>
+
+    <div class="blur">
+      <div id="playBtn">
+        <img src="./images/PlayBtn.svg" alt="Play Button" />
+
+        <audio class="playSound" src="./sounds/startSound.wav"></audio>
+      </div>
+    </div>
+
+    <div class="findWally">
+      <audio class="foundSound" src="./sounds/found.mp3"></audio>
+      <audio class="notFoundSound" src="./sounds/Icq_Uh_Oh.mp3"></audio>
+    </div>
+    <audio
+      class="startSound"
+      src="./sounds/bensound-littleidea.mp3"
+      controls
+      autoplay
+    ></audio>
+
+    <script src="./js/classes.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
