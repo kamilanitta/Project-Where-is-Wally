@@ -28,26 +28,24 @@ body {
   height: auto;
 }
 /* colocar a div do Wally no JS */
-.findWally {
+#findWally {
   /* background-color: lime; */
   border-color: red;
   border-style: dotted;
   width: 40px;
   height: 90px;
   position: absolute;
-  /* right: 20%;
-  bottom: 25%; */
 }
 .blur {
   background-color: snow;
   opacity: 95%;
   border-color: red;
   border-style: dotted;
-  width: 62%;
-  height: 730px;
+  width: 65%;
+  height: 740px;
   position: absolute;
-  right: 100px;
-  top: 50px;
+  right: 60px;
+  top: 57px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
