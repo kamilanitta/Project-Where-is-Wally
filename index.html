@@ -13,43 +13,41 @@
     <div class="top_section">
       <div class="superior_div"></div>
       <!-- <audio
-      class="initialSound"
-      src="./sounds/bensound-littleidea.mp3"
-      controls
-      autoplay
-    ></audio> -->
+        class="initialSound"
+        src="./sounds/bensound-littleidea.mp3"
+        controls
+        autoplay
+      ></audio> -->
     </div>
 
-    <div class="lower_section">
-      <div class="left_container">
-        <div class="logo_div">
-          <img class="logo" src="./images/whereswally-logo.png" alt="logo" />
-        </div>
-        <div class="timer">
-          <h1>Timer</h1>
-          <p>
-            <span id="minDec" class="number">0</span>
-            <span id="minUni" class="number">0</span>
-            <span>:</span>
-            <span id="secDec" class="number">0</span>
-            <span id="secUni" class="number">0</span>
-          </p>
-        </div>
-        <div class="pointsBox">
-          <h1>Score</h1>
-          <p>
-            <span class="countPoints" class="number">0</span>
-            <span>pts</span>
-          </p>
-        </div>
+    <div class="left_container">
+      <div class="logo_div">
+        <img class="logo" src="./images/whereswally-logo.png" alt="logo" />
+      </div>
+      <div class="timer">
+        <h1>Timer</h1>
+        <p>
+          <span id="minDec" class="number">0</span>
+          <span id="minUni" class="number">0</span>
+          <span>:</span>
+          <span id="secDec" class="number">0</span>
+          <span id="secUni" class="number">0</span>
+        </p>
+      </div>
+      <div class="pointsBox">
+        <h1>Score</h1>
+        <p>
+          <span class="countPoints">0</span>
+          <span>pts</span>
+        </p>
       </div>
     </div>
 
-    <div class="blur">
-      <div id="playBtn">
-        <img src="./images/PlayBtn.svg" alt="Play Button" />
+    <div class="lower_section"></div>
 
-        <audio class="playSound" src="./sounds/startSound.wav"></audio>
+    <div class="blur">
+      <div id="playBtn" onmousedown="startSound.play()">
+        <img src="./images/PlayBtn.svg" alt="Play Button" />
       </div>
     </div>
 

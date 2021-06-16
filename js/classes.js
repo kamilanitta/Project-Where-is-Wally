@@ -35,47 +35,60 @@ class Timer {
   }
 }
 
+//Class for Score
+
+// class Score {
+//   constructor() {
+//     this.currentScore = 0;
+//   }
+
+//   getScore(findWally) {
+//     if (findWally === true) {
+//       return (this.currentScore += 1);
+//     }
+//   }
+// }
+
 //Class for when Wally is found
 
-class FindWally {
-  constructor(findWallyX = 0, findWallyY = 0, actualImage, wallyDiv) {
-    this.findWallyX = findWallyX + "px";
-    this.findWallyY = findWallyY + "px";
-    this.wallyDiv = wallyDiv;
-    this.position = this.wallyDiv.getBoundingClientRect();
-    this.actualImage = actualImage;
-    this.notFoundSound = "../sounds/Icq_uh_Oh.mp3";
-    this.foundSound = "../sounds/found.mp3";
-  }
-  // this.findWally.style.position =
+// class FindWally {
+//   constructor(findWallyX = 0, findWallyY = 0, actualImage, wallyDiv) {
+//     this.findWallyX = findWallyX + "px";
+//     this.findWallyY = findWallyY + "px";
+//     this.wallyDiv = wallyDiv;
+//     this.position = this.wallyDiv.getBoundingClientRect();
+//     this.actualImage = actualImage;
+//     this.notFoundSound = "../sounds/Icq_uh_Oh.mp3";
+//     this.foundSound = "../sounds/found.mp3";
+//   }
 
-  //methods
-  getPoints() {
-    if (this.findWally === this.correctSpot) {
-      this.currentPoints += 1;
-      this.isFinished();
-      return true;
-    }
-  }
+//   //methods
+//   getPoints() {
+//     if (this.findWally === this.correctSpot) {
+//       this.currentPoints += 1;
+//       this.isFinished();
+//       return true;
+//     }
+//   }
 
-  getWallyPositionX() {
-    //check how to change position of Find Wally Box
-    return this.position.right;
-  }
+//   getWallyPositionX() {
+//     //check how to change position of Find Wally Box
+//     return this.position.right;
+//   }
 
-  getWallyPositionY() {
-    //check how to change position of Find Wally Box
-    return this.position.bottom;
-  }
+//   getWallyPositionY() {
+//     //check how to change position of Find Wally Box
+//     return this.position.bottom;
+//   }
 
-  setWallyPosition(x_pos, y_pos) {
-    this.wallyDiv.style.right = x_pos + "px";
-    this.wallyDiv.style.bottom = y_pos + "px";
-  }
+//   setWallyPosition(x_pos, y_pos) {
+//     this.wallyDiv.style.right = x_pos + "px";
+//     this.wallyDiv.style.bottom = y_pos + "px";
+//   }
 
-  isFinished() {
-    if (this.currentPoints === 4) {
-      alert("Congrats!!! You found me ;)");
-    }
-  }
-}
+//   isFinished() {
+//     if (this.currentPoints === 4) {
+//       alert("Congrats!!! You found me ;)");
+//     }
+//   }
+// }
