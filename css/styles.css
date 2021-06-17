@@ -37,8 +37,9 @@ body {
 #findWally {
   border-color: transparent;
   /* background-color: greenyellow; */
-  opacity: 60%;
+  /* opacity: 60%; */
   border-style: dotted;
+  border-width: 3pt;
   width: 30px;
   height: 40px;
   position: absolute;
@@ -91,9 +92,9 @@ body {
 .box {
   background-color: #fff;
   width: 15%;
-  height: 80px;
+  height: 90px;
   text-align: center;
-  margin: 5px 50px;
+  margin: 3px 50px;
   border-radius: 20pt;
   border: solid;
   border-width: 2pt;
@@ -137,6 +138,6 @@ h1 {
   margin: 5px;
 }
 p {
-  font-size: 16pt;
+  font-size: 14pt;
   margin-top: 5pt;
 }
