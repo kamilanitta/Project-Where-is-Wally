@@ -10,21 +10,10 @@
   </head>
 
   <body>
-    <div class="top_section">
-      <div class="superior_div"></div>
-      <!-- <audio
-        class="initialSound"
-        src="./sounds/bensound-littleidea.mp3"
-        controls
-        autoplay
-      ></audio> -->
-    </div>
-
     <div class="left_container">
-      <div class="logo_div">
-        <img class="logo" src="./images/whereswally-logo.png" alt="logo" />
-      </div>
-      <div class="timer">
+      <img class="logo" src="./images/whereswally-logo.png" alt="logo" />
+
+      <div class="box">
         <h1>Timer</h1>
         <p>
           <span id="minDec" class="number">0</span>
@@ -34,27 +23,35 @@
           <span id="secUni" class="number">0</span>
         </p>
       </div>
-      <div class="pointsBox">
+      <div class="box">
         <h1>Score</h1>
         <p>
           <span class="countPoints">0</span>
           <span>pts</span>
         </p>
       </div>
+      <div class="audio_box">
+        <button id="stopBtn"><strong>Stop Sound</strong></button>
+        <!-- <audio
+          class="initialSound"
+          src="./sounds/bensound-littleidea.mp3"
+          controls
+          autoplay
+        ></audio> -->
+      </div>
     </div>
 
-    <div class="lower_section"></div>
+    <div id="image_section">
+      <h1 id="winText"></h1>
+    </div>
 
     <div class="blur">
-      <div id="playBtn" onmousedown="startSound.play()">
+      <div id="playBtn">
         <img src="./images/PlayBtn.svg" alt="Play Button" />
       </div>
     </div>
 
-    <div id="findWally">
-      <audio class="foundSound" src="./sounds/found.mp3"></audio>
-      <audio class="notFoundSound" src="./sounds/Icq_Uh_Oh.mp3"></audio>
-    </div>
+    <div id="findWally"></div>
 
     <script src="./js/classes.js"></script>
     <script src="./js/index.js"></script>

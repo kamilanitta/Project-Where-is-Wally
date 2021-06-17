@@ -30,37 +30,116 @@ function printSeconds() {
 //getElements devolve array;
 const blurArea = document.getElementsByClassName("blur");
 const playStartSound = document.getElementsByClassName("playSound");
+const pauseSound = document.getElementById("stopBtn");
+let playSound;
 
 playBtnClick.addEventListener("click", () => {
   blurArea[0].style.display = "none";
-
   timer.start(printTime);
+  playSound = new Audio("./sounds/bensound-littleidea.mp3");
+  playSound.volume = 0.1;
+  playSound.play();
+});
+
+pauseSound.addEventListener("click", () => {
+  playSound.pause();
 });
 
 //Find Wally
 let findWally = document.getElementById("findWally");
 let initialPoints = document.querySelector(".countPoints");
-let correctSpot = document.getElementsByClassName("foundSound");
-let wrongSpot = document.getElementsByClassName("notFoundSound");
-let currentImage = document.getElementsByClassName("lower_section");
+let currentImage = document.getElementById("image_section");
 let wallyFound = false;
 let currentScore = 0;
-// const score = new Score();
+currentImage.style.backgroundImage = 'url("./images/1_waldoCity.jpeg")';
 
 //Event change color of border, when the correct spot is found.
 findWally.addEventListener("click", () => {
   findWally.style.borderColor = "red";
   updateScore();
+  let foundSound = new Audio("./sounds/yupiiii.mp3");
+  foundSound.volume = 0.8;
+  foundSound.play();
   wallyFound = true;
   setTimeout(function () {
-    alert("You won!");
-  }, 1000);
+    if (currentScore != 4) {
+      alert("You found me!");
+    } else {
+      alert("You found me, Sherlock Holmes!");
+    }
+    changeImage();
+  }, 500);
 });
 
 function updateScore() {
   currentScore += 1;
   initialPoints.innerText = currentScore;
+  // console.log(currentScore);
 }
+
+currentImage.addEventListener("click", () => {
+  let notFoundSound = new Audio("./sounds/Icq_Uh_Oh.mp3");
+  notFoundSound.volume = 0.8;
+  notFoundSound.play();
+  wallyFound = false;
+  setTimeout(function () {
+    alert("Sorry, not yet!");
+  }, 500);
+});
+
+//Changing images
+
+let img2 = 'url("./images/2_wallySki.jpeg")';
+let img3 = 'url("./images/3_wallySpace.jpeg")';
+let img4 = 'url("./images/4_wallyOcean.jpeg")';
+let img5 = 'url("./images/5_EndWally.jpeg")';
+let winText = document.getElementById("winText");
+
+function changeImage() {
+  if (currentScore === 1) {
+    currentImage.style.backgroundImage = img2;
+    findWally.style.borderColor = "transparent";
+    findWally.style.right = "11%";
+    findWally.style.bottom = "26%";
+  } else if (currentScore === 2) {
+    currentImage.style.backgroundImage = img3;
+    findWally.style.borderColor = "transparent";
+    findWally.style.right = "45%";
+    findWally.style.bottom = "35%";
+    findWally.style.width = "20px";
+    findWally.style.heigth = "30px";
+  } else if (currentScore === 3) {
+    currentImage.style.backgroundImage = img4;
+    findWally.style.borderColor = "transparent";
+    findWally.style.right = "39.5%";
+    findWally.style.bottom = "75%";
+    findWally.style.width = "20px";
+    findWally.style.heigth = "20px";
+  } else if (currentScore === 4) {
+    currentImage.style.backgroundImage = img5;
+    findWally.style.borderColor = "transparent";
+    winText.innerHTML = "You won!!!";
+  }
+}
+//
+
+// switch (currentScore) {
+//   case 0:
+//     document.getElementById("image_section").src = "./images/2_wallySki.jpeg";
+//     break;
+//   case 1:
+//     document.getElementById("image_section").src = "./images/3_wallySpace.jpeg";
+//     break;
+//   case 2:
+//     document.getElementById("image_section").src = "./images/2_wallyOcean.jpeg";
+//     break;
+//   case 3:
+//     setTimeout(function () {
+//       alert("Congrats!!! You found me Sherlock Holmes!");
+//     }, 500);
+//     break;
+// }
+//
 
 //Action that happen when Wally is found
 // const game = new FindWally(
