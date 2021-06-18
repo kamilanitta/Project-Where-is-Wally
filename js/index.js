@@ -89,9 +89,9 @@ currentImage.addEventListener("click", () => {
 
 //Changing images
 
-let img2 = 'url("./images/2_wallySki.jpeg")';
+let img2 = 'url("./images/2_WallySki.jpeg")';
 let img3 = 'url("./images/3_wallySpace.jpeg")';
-let img4 = 'url("./images/4_wallyOcean.jpeg")';
+let img4 = 'url("./images/4_WallyOcean.jpeg")';
 let img5 = 'url("./images/5_EndWally.jpeg")';
 let winText = document.getElementById("winText");
 
@@ -125,7 +125,7 @@ function changeImage() {
 
 // switch (currentScore) {
 //   case 0:
-//     document.getElementById("image_section").src = "./images/2_wallySki.jpeg";
+//     document.getElementById("image_section").src = "../images/2_wallySki.jpeg";
 //     break;
 //   case 1:
 //     document.getElementById("image_section").src = "./images/3_wallySpace.jpeg";
