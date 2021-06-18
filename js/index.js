@@ -48,7 +48,9 @@ pauseSound.addEventListener("click", () => {
 //Find Wally
 let findWally = document.getElementById("findWally");
 let initialPoints = document.querySelector(".countPoints");
-let currentImage = document.getElementById("image_section");
+let currentImage = document.querySelectorAll(
+  "#image_section >:not(#findWally)"
+);
 let wallyFound = false;
 let currentScore = 0;
 currentImage.style.backgroundImage = 'url("./images/1_waldoCity.jpeg")';
@@ -90,8 +92,8 @@ currentImage.addEventListener("click", () => {
 //Changing images
 
 let img2 = 'url("./images/2_wallySki.jpeg")';
-let img3 = 'url("./images/3_wallySpace.jpeg")';
-let img4 = 'url("./images/4_wallyOcean.jpeg")';
+let img3 = 'url("./images/3_wallyOcean.jpeg")';
+let img4 = 'url("./images/4_wallySpace.jpeg")';
 let img5 = 'url("./images/5_EndWally.jpeg")';
 let winText = document.getElementById("winText");
 
@@ -100,19 +102,19 @@ function changeImage() {
     currentImage.style.backgroundImage = img2;
     findWally.style.borderColor = "transparent";
     findWally.style.right = "11%";
-    findWally.style.bottom = "26%";
+    findWally.style.bottom = "22%";
   } else if (currentScore === 2) {
     currentImage.style.backgroundImage = img3;
     findWally.style.borderColor = "transparent";
-    findWally.style.right = "45%";
-    findWally.style.bottom = "35%";
-    findWally.style.width = "20px";
-    findWally.style.heigth = "30px";
+    findWally.style.right = "51%";
+    findWally.style.bottom = "77%";
+    findWally.style.width = "17px";
+    findWally.style.heigth = "20px";
   } else if (currentScore === 3) {
     currentImage.style.backgroundImage = img4;
     findWally.style.borderColor = "transparent";
-    findWally.style.right = "39.5%";
-    findWally.style.bottom = "75%";
+    findWally.style.right = "58%";
+    findWally.style.bottom = "33%";
     findWally.style.width = "20px";
     findWally.style.heigth = "20px";
   } else if (currentScore === 4) {

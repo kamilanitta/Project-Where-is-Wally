@@ -36,15 +36,15 @@ body {
 /* colocar a div do Wally no JS */
 #findWally {
   border-color: transparent;
-  /* background-color: greenyellow; */
-  /* opacity: 60%; */
+  /* background-color: greenyellow;
+  opacity: 60%; */
   border-style: dotted;
   border-width: 3pt;
   width: 30px;
   height: 40px;
   position: absolute;
-  right: 26%;
-  bottom: 5%;
+  right: 32%;
+  bottom: 0%;
 }
 .blur {
   background-color: snow;
