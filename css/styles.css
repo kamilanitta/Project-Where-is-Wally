@@ -11,7 +11,7 @@
 /* Background image - fundo azul listrado*/
 
 body {
-  background-image: url("../images/Backgroung.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,6 +31,10 @@ body {
   position: absolute;
   right: 42px;
   top: 30px;
+}
+#notWally {
+  width: 900px;
+  height: 600px;
 }
 
 /* colocar a div do Wally no JS */
@@ -67,7 +71,8 @@ body {
   opacity: 80%;
   text-align: center;
   position: relative;
-  top: 30%;
+  top: 35%;
+  z-index: 1;
 }
 
 /* Left Container */

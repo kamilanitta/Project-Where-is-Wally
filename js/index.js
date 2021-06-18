@@ -48,9 +48,9 @@ pauseSound.addEventListener("click", () => {
 //Find Wally
 let findWally = document.getElementById("findWally");
 let initialPoints = document.querySelector(".countPoints");
-let currentImage = document.querySelectorAll(
-  "#image_section >:not(#findWally)"
-);
+// let currentImage = document.querySelector("#image_section:not (#findWally)");
+let currentImage = document.getElementById("image_section");
+let notWally = document.getElementById("notWally");
 let wallyFound = false;
 let currentScore = 0;
 currentImage.style.backgroundImage = 'url("./images/1_waldoCity.jpeg")';
@@ -79,14 +79,14 @@ function updateScore() {
   // console.log(currentScore);
 }
 
-currentImage.addEventListener("click", () => {
+notWally.addEventListener("click", () => {
   let notFoundSound = new Audio("./sounds/Icq_Uh_Oh.mp3");
   notFoundSound.volume = 0.8;
   notFoundSound.play();
   wallyFound = false;
-  setTimeout(function () {
-    alert("Sorry, not yet!");
-  }, 500);
+  // setTimeout(function () {
+  //   alert("Sorry, not yet!");
+  // }, 500);
 });
 
 //Changing images
@@ -94,7 +94,7 @@ currentImage.addEventListener("click", () => {
 let img2 = 'url("./images/2_wallySki.jpeg")';
 let img3 = 'url("./images/3_wallyOcean.jpeg")';
 let img4 = 'url("./images/4_wallySpace.jpeg")';
-let img5 = 'url("./images/5_EndWally.jpeg")';
+let img5 = 'url("./images/5_endWally.jpeg")';
 let winText = document.getElementById("winText");
 
 function changeImage() {
