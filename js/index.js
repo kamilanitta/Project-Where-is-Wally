@@ -89,9 +89,9 @@ currentImage.addEventListener("click", () => {
 
 //Changing images
 
-let img2 = 'url("./images/2_WallySki.jpeg")';
+let img2 = 'url("./images/2_wallySki.jpeg")';
 let img3 = 'url("./images/3_wallySpace.jpeg")';
-let img4 = 'url("./images/4_WallyOcean.jpeg")';
+let img4 = 'url("./images/4_wallyOcean.jpeg")';
 let img5 = 'url("./images/5_EndWally.jpeg")';
 let winText = document.getElementById("winText");
 
