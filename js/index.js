@@ -123,32 +123,6 @@ function changeImage() {
 }
 //
 
-// switch (currentScore) {
-//   case 0:
-//     document.getElementById("image_section").src = "../images/2_wallySki.jpeg";
-//     break;
-//   case 1:
-//     document.getElementById("image_section").src = "./images/3_wallySpace.jpeg";
-//     break;
-//   case 2:
-//     document.getElementById("image_section").src = "./images/2_wallyOcean.jpeg";
-//     break;
-//   case 3:
-//     setTimeout(function () {
-//       alert("Congrats!!! You found me Sherlock Holmes!");
-//     }, 500);
-//     break;
-// }
-//
-
-//Action that happen when Wally is found
-// const game = new FindWally(
-//   0,
-//   0,
-//   "../images/1_waldoCity.jpeg",
-//   document.getElementById("findWally")
-// );
-
 //
 // console.log(game.position);
 // game.setWallyPosition(400, 40);
