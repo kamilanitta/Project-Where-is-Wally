@@ -91,10 +91,10 @@ notWally.addEventListener("click", () => {
 
 //Changing images
 
-let img2 = 'url("./images/2_wallySki.jpeg")';
+let img2 = 'url("./images/2_WallySki.jpeg")';
 let img3 = 'url("./images/3_wallyOcean.jpeg")';
 let img4 = 'url("./images/4_wallySpace.jpeg")';
-let img5 = 'url("./images/5_endWally.jpeg")';
+let img5 = 'url("./images/5_EndWally.jpeg")';
 let winText = document.getElementById("winText");
 
 function changeImage() {
