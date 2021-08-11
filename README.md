@@ -1,6 +1,7 @@
 # Project: Where's Wally?
 
 About the Game
+--------------
 
 Your journey takes you across 4 scenarios. Your goal is to find Wally as quickly as you can and click on his image! After every finding you are given a score point.
 Take note, though: Your “click” must be very precise. If you don’t land exactly on Wally’s spot, it doesn’t recognize it as a right answer.
